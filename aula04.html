@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Aula05A</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" href="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/aula01.html">Aula 01</a>
+      <a href="/aula02.html">Aula 02</a>
+      <a href="/aula03.html">Aula 03</a>
+      <a href="/aula04.html" aria-current="page">Aula 04</a>
+    </nav>
+    <main>
+      <!-- IMAGENS, JAVASCRIPT E EVENTO -->
+      <h1 class="centro">Trabalhando com Imagem, JS e HTML</h1>
+      <h2 class="centro">Alterando com JS</h2>
+      <div id="div1">
+        <img
+          id="img_semaforo"
+          src="https://stackblitz.com/storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBeDFMQkE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--f968a2922b1434cc81134619ccaaf4ffada85a64/imagen01.png"
+          style="width: 200px; height: 400px"
+        />
+        <br />
+        <button id="btn_mudar" onclick="muda_cor()">Mudar Cor</button>
+      </div>
+
+      <script>
+        function muda_cor() {
+          var img = document.getElementById('img_semaforo');
+
+          var amarelo =
+            'https://stackblitz.com/storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBeDVMQkE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--6f54f5931e3a89d96854584709666daabf8279d8/amarelo.png';
+
+          var verde =
+            'https://stackblitz.com/storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBeDFMQkE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--f968a2922b1434cc81134619ccaaf4ffada85a64/imagen01.png';
+
+          var vermelho =
+            'https://stackblitz.com/storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBeUJMQkE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--92c285f4098e21be937c19c8d32c7c819d3abc56/verde.png';
+
+          if (img.src.match(verde)) {
+            img.src = amarelo;
+          } else if (img.src.match(amarelo)) {
+            img.src = vermelho;
+          } else {
+            img.src = verde;
+          }
+        }
+      </script>
+      <div id="div2"></div>
+    </main>
+  </body>
+</html>

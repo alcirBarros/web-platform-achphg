@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Aula05A</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" href="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/aula01.html">Aula 01</a>
+      <a href="/aula02.html">Aula 02</a>
+      <a href="/aula03.html" aria-current="page">Aula 03</a>
+      <a href="/aula04.html">Aula 04</a>
+    </nav>
+    <main>
+      <header style="text-align: center;">
+        <h1>Formulário em HTML5</h1>
+    </header>
+    <section>
+        <h2>Cadastro de Usuário</h2>
+
+        <form>
+            <fieldset id="dadosp">
+                <legend>Dados Pessoais</legend>
+                <p>
+                    <label for="Nome">Nome:</label>
+                    <input type="text" size="50" required="true"/>
+                </p>
+
+                <p>
+                    <label for="CPF">CPF:</label>
+                    <input type="number" />
+                </p>
+                <!-- -->
+                <p>
+                    <label for="DataNasc">Nascimento:</label>
+                    <input type="date" />
+                </p>
+
+                <p>
+                    <label for="email">E-mail:</label>
+                    <input type="email" />
+                </p>
+
+                <p>
+                    <label for="CEP">CEP:</label>
+                    <input type="text" maxlength="8" />
+                </p>
+
+                <p>
+                    <label for="Logradouro">Endereço:</label>
+                    <input type="text" />
+                </p>
+
+                <p>
+                    <label for="Numero">Nº:</label>
+                    <input type="text" size="6" />
+                    <label for="Complemento">Complemento:</label>
+                    <input type="text" />
+                </p>
+
+                <p>
+                    <label for="sexo">Sexo:</label>
+                    <input type="radio" name="sexo" checked="true">Masculino</input>
+                    <input type="radio" name="sexo">Feminino</input>
+                    <input type="radio" name="sexo">Outro</input>
+                </p>
+            </fieldset>
+           
+            <p>
+                <fieldset id="inter" >
+                    <legend>Interesses</legend>
+                    <label for="interesses">Interesses:</label>
+                    <br />
+                    <input type="checkbox">Artes</input>
+                    <input type="checkbox">Ciências</input>
+                    <input type="checkbox">Tecnologia</input>
+                    <input type="checkbox">Viagem</input>
+                    <br />
+                    <input type="checkbox">Música</input>
+                    <input type="checkbox">Esporte</input>
+                    <input type="checkbox">Gastronomia</input>
+                    <input type="checkbox">Redes Sociais</input>
+                </fieldset>
+            </p>
+
+            <p>
+            <h3 class="corv">Formação Acadêmica</h3>
+            <select>
+                <option disabled="false" selected="true">Selecione uma Opção</option>
+                <option>Ens. Fundamental</option>
+                <option>Ens. Médio</option>
+                <option>Ens. Superior</option>
+                <option>Pós-Graduação</option>
+            </select>
+            </p>
+
+            <hr/>
+
+            <p>
+                <label for="meu_arquivo">Selecione um arquivo:</label>
+                <input type="file" multiple>
+            </p>
+
+            <input type="submit" value="Enviar"></input>
+
+        </form>
+
+
+    </section>
+
+    </main>
+  </body>
+</html>
